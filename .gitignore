@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+.DS_Store
+
+raw_dataset/
+wheat-dataset/
+
 __pycache__/
 *.py[cod]
 *$py.class
