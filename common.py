@@ -65,6 +65,14 @@ def get_r_img_list():
     img_list = get_imgs(img_list, RZD_SMUT)
     return img_list
 
+def get_r3_img_list():
+    img_list = []
+    img_list = get_imgs(img_list, RZD_3_HEALTHY)
+    img_list = get_imgs(img_list, RZD_3_LEAF_RUST)
+    img_list = get_imgs(img_list, RZD_3_STEM_RUST)
+    img_list = get_imgs(img_list, RZD_3_SMUT)
+    return img_list
+
 def check_or_creat(dir):
     if (not os.path.exists(dir)) :
         os.makedirs(dir)
