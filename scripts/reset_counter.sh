@@ -1,6 +1,7 @@
 #!/bin/bash
 
-for file in ../rez_dataset/*
+echo 'Working On $1'
+for file in ../$1/*
 do
 	echo "Processing: $file"
 	((count = 0))
@@ -11,7 +12,7 @@ do
 		ext=$(echo $img_n| cut -d "." -f 2)
 		n_name=$(echo $label\_$count.$ext)
 		echo $count $img $n_name
-		mv $img $(echo ../rez_dataset/$file/$n_name)
+		mv $img $(echo ../$1/$file/$n_name)
 		((count += 1))
 	done
 done

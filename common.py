@@ -3,8 +3,10 @@ import shutil
 
 IMG_SIZE = 256
 
+DB_PATH  = os.path.join(os.getcwd(), 'wheat-dataset')
 EED_PATH  = os.path.join(os.getcwd(), 'raw_dataset')
 RZD_PATH  = os.path.join(os.getcwd(), 'rez_dataset')
+RZD_3_PATH  = os.path.join(os.getcwd(), 'rez_dataset_3')
 DUMP_PATH = os.path.join(os.getcwd(), 'raw_dataset', '_dump')
 
 RD_PATH = os.path.join(os.getcwd(), 'wheat-dataset', '__gwhd_2021', 'images')
@@ -23,6 +25,11 @@ RZD_HEALTHY   = os.path.join( RZD_PATH, C_HEALTHY)
 RZD_LEAF_RUST = os.path.join( RZD_PATH, C_LEAF_RUST)
 RZD_STEM_RUST = os.path.join( RZD_PATH, C_STEM_RUST)
 RZD_SMUT      = os.path.join( RZD_PATH, C_SMUT)
+
+RZD_3_HEALTHY   = os.path.join( RZD_3_PATH, C_HEALTHY)
+RZD_3_LEAF_RUST = os.path.join( RZD_3_PATH, C_LEAF_RUST)
+RZD_3_STEM_RUST = os.path.join( RZD_3_PATH, C_STEM_RUST)
+RZD_3_SMUT      = os.path.join( RZD_3_PATH, C_SMUT)
 
 IMG_LABEL = { C_HEALTHY: 'HW',
               C_LEAF_RUST: 'LR',
